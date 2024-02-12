@@ -12,6 +12,8 @@ mongoose.connect("mongodb+srv://dbUser:newPassword@cluster0.lc01svp.mongodb.net/
     useUnifiedTopology: true
 });
 
+
+
 let db = mongoose.connection;
 
 
@@ -30,6 +32,12 @@ app.use('/user', userRoute);
 
 const productRoute = require('./routers/productRoute');
 app.use('/product', productRoute);
+
+
+
+const orderRoute = require('./routers/orderRoute');
+app.use('/order', orderRoute);
+
 
 console.log(mongoose.Types.ObjectId.isValid("53cb6b9b4f4ddef1ad47f943"));
 console.log(mongoose.Types.ObjectId.isValid("6357e452eee9a5ca168e1d61"));
