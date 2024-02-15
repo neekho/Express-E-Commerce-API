@@ -39,6 +39,11 @@ const orderRoute = require('./routers/orderRoute');
 app.use('/order', orderRoute);
 
 
+const utilitiesRoute = require('./routers/utilitiesRoute');
+app.use('/utils', utilitiesRoute);
+
+
+
 console.log(mongoose.Types.ObjectId.isValid("53cb6b9b4f4ddef1ad47f943"));
 console.log(mongoose.Types.ObjectId.isValid("6357e452eee9a5ca168e1d61"));
 
