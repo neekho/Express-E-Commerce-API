@@ -33,12 +33,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Postman Screenshot](./1.PNG)
 
-![RestController.java Screenshot](./assets/controller.PNG)
-
-
-![Model.java Screenshot](./assets/MODEL.PNG)
+![All Requests Screenshot](./assets/project_screenshots/all_requests.PNG)
+![Project Structure Screenshot](./assets/project_screenshots/project_structure.PNG)
 
 A RESTful E-Commerce API that is built on Express and MongoDB Atlas. Project contains user, product, and order services to accomodate possible users.
 
@@ -86,7 +83,7 @@ _Once installed, open a command prompt, choose your directory wherein you want t
 5. Run the command node index.js to start the server locally.
 
 
-_Once the local server is running, open up a browser and go to http://localhost:8080/api/v1/routes
+_Once the local server is running, open up a browser and go to http://localhost:4000/utils/routes
 to see if the local server is up and running. Along with possible routes._
 
 
@@ -95,7 +92,9 @@ to see if the local server is up and running. Along with possible routes._
 ___________________________________________________________________________________________________
 
 ### Routes
-Go to _http://localhost:8080/api/v1/routes_ for a list of possible routes in the current version of this API, for a detailed version of what does each route do, go to API Routes section.
+![All Routes Screenshot](./assets/project_screenshots/all_routes.PNG)
+
+Go to _http://localhost:4000/utils/routes_ for a list of possible routes in the current version of this API, for a detailed version of what does each route do, go to API Routes section.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
