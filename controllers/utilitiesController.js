@@ -1,6 +1,6 @@
 const userRoute = {
     'GET user profile {"userName": "username", "password": "pass"} JSON BODY': 'http://localhost:4000/user/profile',
-    'PUT make user admin <BUSINESS LOGIC MISSING WILL UPDATE>': 'http://localhost:4000/user/makeAdmin/USER_ID',
+    'PUT make user admin:': 'http://localhost:4000/user/make_administrator/USER_ID',
     'POST user add to cart <BUSINESS LOGIC MISSING WILL UPDATE>': 'http://localhost:4000/user/cart/PRODUCT_ID',
     'POST add user <NOTE CHECK USER CONTROLLER.JS FOR JSON BODY EXAMPLE>': 'http://localhost:PORTNUM<DEFAULT:400>/user/registrer',
 
