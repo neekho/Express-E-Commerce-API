@@ -107,6 +107,11 @@ ________________________________________________________________________________
 <h3>v1 Routes</h3>
 Refer here for all the list of available routes in the API. You may use Postman or Curl in testing the endpoints or other API testing tools.
 
+<h4>User</h4>
+
+<h4>Product</h4>
+<h4>Order</h4>
+
 
 * [GET Routes](http://localhost:8080/api/v1/student/routes) _Returns all possible routess in JSON format_
 * [GET List](http://localhost:8080/api/v1/student)  _See all existing students in the database._
