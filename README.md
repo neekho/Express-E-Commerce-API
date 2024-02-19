@@ -111,22 +111,22 @@ Refer here for all the list of available routes in the API. You should use Postm
 <h4>User</h4>
 
 * [GET User Profile](http://localhost:4000/user/profile)  _Returns all attributes related to the user. You must include a request body of -> {"username": "value", "password": "userpassword"}._
-* [POST Add User](http://localhost:4000/user/register)  
+* [POST Add User](http://localhost:4000/user/register)  _Create a user, observe the proper request body in creating a user -> (https://pastebin.com/c0YCnsSR) _
 * [PUT Make User Admin](http://localhost:4000/user/make_administrator/{USER_ID}) _Turns a non-admin account into one, an admin credentials must be provided to the request body {"adminUserName": "a", "adminPassword": "ap"}, and a non admin USER ID to the URL_
 
 
 <h4>Product</h4>
 
 * [GET Active Products](http://localhost:4000/product/active)  _Returns all products that are active. Disregards all inactive (or archived) products._
-* [GET Single Product by ID](http://localhost:4000/product/{PRODUCT_ID})  _Returns a product by ID._
-* [POST Add Product](http://localhost:4000/product/create)  
+* [GET Single Product by ID](http://localhost:4000/product/{PRODUCT_ID})  _Returns a product by ID. Provide a product ID to url_
+* [POST Add Product](http://localhost:4000/product/create)  _Create a product, observe the proper request body in creating a product -> (https://pastebin.com/v4mwYWan)_
 * [DELETE Product by ID](http://localhost:4000/product/archive/{PRODUCT_ID})  _Archives a product by ID, will make the active status to False when done._
 
 
 
 <h4>Order</h4>
 
-* [POST Order Checkout](http://localhost:4000/order/checkout)  
+* [POST Order Checkout](http://localhost:4000/order/checkout)  __
 
 
 
