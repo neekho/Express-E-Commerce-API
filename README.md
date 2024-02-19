@@ -107,18 +107,28 @@ ________________________________________________________________________________
 <h3>v1 Routes</h3>
 Refer here for all the list of available routes in the API. You may use Postman or Curl in testing the endpoints or other API testing tools.
 
+
 <h4>User</h4>
 
+* [GET User Profile](http://localhost:4000/user/profile)
+* [POST Add User](http://localhost:4000/user/register)  
+* [PUT Make User Admin](http://localhost:4000/user/make_administrator/{USER_ID}) 
+
+
 <h4>Product</h4>
+
+* [GET Active Products](http://localhost:4000/product/active)
+* [GET Single Product by ID](http://localhost:4000/product/{PRODUCT_ID})
+* [POST Add Product](http://localhost:4000/product/create)  
+* [DELETE Product by ID](http://localhost:4000/product/archive/{PRODUCT_ID})  _Delete an existing student. Provide a student id at the end of this url._
+
+
+
 <h4>Order</h4>
 
+* [POST Order Checkout](http://localhost:4000/order/checkout)  
 
-* [GET Routes](http://localhost:8080/api/v1/student/routes) _Returns all possible routess in JSON format_
-* [GET List](http://localhost:8080/api/v1/student)  _See all existing students in the database._
-* [GET Single Object Student](http://localhost:8080/api/v1/student/ID) _Provide a student id at the end of this url or else this will result in a 404._
-* [POST Add Student](http://localhost:8080/api/v1/student/post)  _Create a student that will be save in the PostgreSQL database._
-* [PUT Update Student](http://localhost:8080/api/v1/student/ID?email=new_value&name=new_name)  _Update existing student data. ID pertains to the student object that will be updated. The email and name is will be the data for that specified student_
-* [DELETE Student](http://localhost:8080/api/v1/student/ID)  _Delete an existing student. Provide a student id at the end of this url._
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +138,7 @@ ________________________________________________________________________________
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] JWT safety
+- [ ] JWT in making requests
 - [ ] Login and logout
 - [ ] Hash user passwords
 
