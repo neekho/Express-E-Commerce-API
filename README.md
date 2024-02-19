@@ -105,22 +105,22 @@ ________________________________________________________________________________
 ### API Routes
 
 <h3>v1 Routes</h3>
-Refer here for all the list of available routes in the API. You may use Postman or Curl in testing the endpoints or other API testing tools.
+Refer here for all the list of available routes in the API. You should use Postman or Curl in testing the endpoints or other API testing tools.
 
 
 <h4>User</h4>
 
-* [GET User Profile](http://localhost:4000/user/profile)
+* [GET User Profile](http://localhost:4000/user/profile)  _Returns all attributes related to the user. You must include a request body of -> {"username": "value", "password": "userpassword"}._
 * [POST Add User](http://localhost:4000/user/register)  
-* [PUT Make User Admin](http://localhost:4000/user/make_administrator/{USER_ID}) 
+* [PUT Make User Admin](http://localhost:4000/user/make_administrator/{USER_ID}) _Turns a non-admin account into one, an admin credentials must be provided to the request body {"adminUserName": "a", "adminPassword": "ap"}, and a non admin USER ID to the URL_
 
 
 <h4>Product</h4>
 
-* [GET Active Products](http://localhost:4000/product/active)
-* [GET Single Product by ID](http://localhost:4000/product/{PRODUCT_ID})
+* [GET Active Products](http://localhost:4000/product/active)  _Returns all products that are active. Disregards all inactive (or archived) products._
+* [GET Single Product by ID](http://localhost:4000/product/{PRODUCT_ID})  _Returns a product by ID._
 * [POST Add Product](http://localhost:4000/product/create)  
-* [DELETE Product by ID](http://localhost:4000/product/archive/{PRODUCT_ID})  _Delete an existing student. Provide a student id at the end of this url._
+* [DELETE Product by ID](http://localhost:4000/product/archive/{PRODUCT_ID})  _Archives a product by ID, will make the active status to False when done._
 
 
 
